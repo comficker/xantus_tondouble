@@ -15,6 +15,10 @@ const themeVariables = ref({
 if (matches.length == 2) {
   themeVariables.value = JSON.parse(matches[1])
 }
+
+document.body.style.setProperty('--bg_color', themeVariables.value.bg_color)
+document.body.style.setProperty('--text_color', themeVariables.value.text_color)
+
 </script>
 
 <template>
