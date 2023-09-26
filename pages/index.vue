@@ -19,6 +19,7 @@ if (matches.length == 2) {
 
 <template>
   <div
+    id="webapp"
     class="max-w-lg mx-auto p-2"
     style="--bg_color: #ffffff"
     :style='{
