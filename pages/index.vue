@@ -39,7 +39,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="webapp" class="max-w-lg mx-auto px-2 md:py-2">
+  <div id="webapp" class="max-w-lg mx-auto py-4 px-2 md:py-2">
     <div class="space-y-2">
       <div class="grid gap-2 grid-cols-2">
         <div class="btn shadow font-semibold rounded-lg p-4 flex justify-center" :class="{'primary': bet === 0}" @click="bet = 0">
