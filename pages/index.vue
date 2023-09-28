@@ -42,24 +42,24 @@ onMounted(() => {
   <div id="webapp" class="max-w-lg mx-auto py-4 px-2 md:py-2">
     <div class="space-y-2">
       <div class="grid gap-2 grid-cols-2">
-        <div class="btn shadow font-semibold rounded-lg p-4 flex justify-center" :class="{'primary': bet === 0}" @click="bet = 0">
+        <div class="btn shadow font-semibold rounded-lg flex justify-center" :class="{'primary': bet === 0}" @click="bet = 0">
           <div>Head</div>
         </div>
-        <div class="btn shadow font-semibold rounded-lg p-4 flex justify-center" :class="{'primary': bet === 1}" @click="bet = 1">
+        <div class="btn shadow font-semibold rounded-lg flex justify-center" :class="{'primary': bet === 1}" @click="bet = 1">
           <div>Tail</div>
         </div>
       </div>
       <div class="grid gap-2 grid-cols-3 text-sm">
         <div
           v-for="i in [1, 2, 3, 5, 8, 10]"
-          class="btn shadow font-semibold rounded-lg p-4 flex justify-center"
+          class="btn shadow font-semibold rounded-lg flex justify-center"
           :class="{'primary': amount === i}"
           @click="amount = i"
         >
           <div>{{i}} TON</div>
         </div>
       </div>
-      <div v-if="!connected" class="btn primary shadow font-semibold rounded-lg p-4 flex justify-between items-center" @click="connect">
+      <div v-if="!connected" class="btn primary shadow font-semibold rounded-lg flex justify-between items-center" @click="connect">
         <div class="flex items-center gap-3">
           <div class="i-con-wallet w-5 h-5"/>
           <div>Connect wallet</div>
@@ -68,13 +68,13 @@ onMounted(() => {
           <div class="i-con-right w-5 h-5"/>
         </div>
       </div>
-      <div v-else class="btn primary shadow font-semibold rounded-lg p-4 flex justify-center items-center" @click="double">
+      <div v-else class="btn primary shadow font-semibold rounded-lg flex justify-center items-center" @click="double">
         <div class="flex items-center justify-center gap-3">
           <div class="i-con-wallet w-5 h-5"/>
           <div>Get double</div>
         </div>
       </div>
-      <div class="btn shadow font-semibold rounded-lg p-4 flex justify-between items-center">
+      <div class="btn shadow font-semibold rounded-lg flex justify-between items-center">
         <div class="flex items-center gap-3">
           <div class="i-con-rank w-5 h-5"/>
           <div>Leaderboard</div>
@@ -83,7 +83,7 @@ onMounted(() => {
           <div class="i-con-right w-5 h-5"/>
         </div>
       </div>
-      <div class="btn shadow font-semibold rounded-lg p-4 flex justify-between items-center">
+      <div class="btn shadow font-semibold rounded-lg flex justify-between items-center">
         <div class="flex items-center gap-3">
           <div class="i-con-help w-5 h-5"/>
           <div>Help Center</div>

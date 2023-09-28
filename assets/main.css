@@ -18,9 +18,12 @@ body {
   @apply cursor-pointer;
   background: var(--secondary_bg_color);
   color: var(--text_color);
+  font-size: 14px;
+  padding: 10px 17px;
 }
 
 .btn.primary {
   background: var(--button_color);
   color: var(--button_text_color);
+  border: none;
 }

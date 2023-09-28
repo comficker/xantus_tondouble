@@ -22,6 +22,11 @@ document.body.style.setProperty('--text_color', themeVariables.value.text_color)
 useHead({
   title: "Lobby"
 })
+
+if (window.Telegram) {
+  window.Telegram.WebApp.expand();
+  window.Telegram.WebApp.setHeaderColor(themeVariables.value.button_text_color);
+}
 </script>
 
 <template>
