@@ -23,10 +23,11 @@ useHead({
   title: "Lobby"
 })
 
-if (window.Telegram) {
-  window.Telegram.WebApp.expand();
-  window.Telegram.WebApp.setHeaderColor(themeVariables.value.button_text_color);
-}
+onMounted(() => {
+  if (window.Telegram) {
+    window.Telegram.WebApp.setHeaderColor(themeVariables.value.secondary_bg_color);
+  }
+})
 </script>
 
 <template>
