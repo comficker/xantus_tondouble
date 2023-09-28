@@ -7,8 +7,8 @@ const connected = ref(false)
 
 const connect = async () => {
   if (connector.value && !connector.value.connected) {
-    const connectedWallet = await connector.value.connectWallet();
-    console.log(connectedWallet);
+    const connectedWallet = await connector.value.connectWallet().catch(() => null);
+    connected.value = !!connectedWallet
   }
 }
 
