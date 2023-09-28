@@ -19,7 +19,7 @@ body {
   background: var(--secondary_bg_color);
   color: var(--text_color);
   font-size: 14px;
-  padding: 10px 17px;
+  padding: 16px 17px;
 }
 
 .btn.primary {
