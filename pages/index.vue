@@ -41,7 +41,13 @@ onMounted(() => {
 <template>
   <div id="webapp" class="max-w-lg mx-auto py-4 px-2 md:py-2">
     <div class="space-y-2">
-      <div class="min-h-72"></div>
+      <div>
+        <div class="pt-full relative">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <img src="/ton.png" alt="" class="w-1/2 object-cover">
+          </div>
+        </div>
+      </div>
       <div class="grid gap-2 grid-cols-2">
         <div class="btn shadow font-semibold rounded-xl flex justify-center" :class="{'primary': bet === 0}" @click="bet = 0">
           <div>Head</div>
