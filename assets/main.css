@@ -15,6 +15,7 @@ body {
 }
 
 .btn {
+  @apply cursor-pointer;
   background: var(--button_color);
   color: var(--button_text_color);
 }
