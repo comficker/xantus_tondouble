@@ -68,13 +68,10 @@ onMounted(() => {
           <div class="i-con-right w-5 h-5"/>
         </div>
       </div>
-      <div v-else class="btn primary shadow font-semibold rounded-lg p-4 flex justify-between items-center" @click="double">
-        <div class="flex items-center gap-3">
+      <div v-else class="btn primary shadow font-semibold rounded-lg p-4 flex justify-center items-center" @click="double">
+        <div class="flex items-center justify-center gap-3">
           <div class="i-con-wallet w-5 h-5"/>
           <div>Get double</div>
-        </div>
-        <div>
-          <div class="i-con-right w-5 h-5"/>
         </div>
       </div>
       <div class="btn shadow font-semibold rounded-lg p-4 flex justify-between items-center">

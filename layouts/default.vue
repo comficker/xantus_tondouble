@@ -28,13 +28,13 @@ useHead({
   <div
     style="--bg_color: #ffffff"
     :style='{
-      "--bg_color": themeVariables.bg_color,
+      "--bg_color": themeVariables.secondary_bg_color,
       "--text_color": themeVariables.text_color,
       "--hint_color": themeVariables.hint_color,
       "--link_color": themeVariables.link_color,
       "--button_color": themeVariables.button_color,
       "--button_text_color": themeVariables.button_text_color,
-      "--secondary_bg_color": themeVariables.secondary_bg_color,
+      "--secondary_bg_color": themeVariables.bg_color,
     }'
   >
     <slot/>
